@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x718b1d3750a58c396befe755cee3d62e8f60e84698e18e6c61854659580aff"
+original_class_hash = "0x718b1d3750a58c396befe755cee3d62e8f60e84698e18e6c61854659580aff"
+abi = "manifests/dev/abis/base/models/stay_alive_models_position_position.json"
+name = "stay_alive::models::position::position"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "vec"
+type = "Vec2"
+key = false

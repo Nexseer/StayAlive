@@ -1,0 +1,25 @@
+kind = "DojoModel"
+class_hash = "0x23411adec58ea2722b2012cc7f5018e0334780539f0280bf2bfd9864e18f780"
+original_class_hash = "0x23411adec58ea2722b2012cc7f5018e0334780539f0280bf2bfd9864e18f780"
+abi = "manifests/dev/abis/base/models/stay_alive_models_player_player.json"
+name = "stay_alive::models::player::player"
+
+[[members]]
+name = "character_id"
+type = "u8"
+key = true
+
+[[members]]
+name = "character_type"
+type = "CharacterType"
+key = false
+
+[[members]]
+name = "hp"
+type = "u64"
+key = false
+
+[[members]]
+name = "attack"
+type = "u64"
+key = false

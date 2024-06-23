@@ -1,0 +1,32 @@
+[package]
+cairo-version = "2.6.3"
+name = "stay_alive"
+version = "0.7.0"
+
+[cairo]
+sierra-replace-ids = true
+
+[scripts]
+migrate = "sozo build && sozo migrate plan && sozo migrate apply"
+spawn = "./scripts/spawn.sh"
+move = "./scripts/move.sh"
+
+[dependencies]
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v0.7.1" }
+
+[[target.dojo]]
+
+[tool.dojo]
+initializer_class_hash = "0xbeef"
+
+[tool.dojo.env]
+rpc_url = "http://localhost:5050/"
+# Default account for katana with seed = 0
+account_address = "0xb3ff441a68610b30fd5e2abbf3a1548eb6ba6f3559f2862bf2dc757e5828ca"
+private_key = "0x2bbf4f9fd0bbb2e60b0316c1fe0b76cf7a4d0198bd493ced9b8df2a3a24d68a"
+world_address = "0x021e8d195bb55b28402e8e2dfe67ceabb59c492af288c4c0a25a1a8984d10787"
+
+[tool.dojo.world]
+name = "Stay Alive"
+description = "A large-scale survival 3D game made with Unity and Dojo Engine."
+icon_uri = "file://assets/logo.png"

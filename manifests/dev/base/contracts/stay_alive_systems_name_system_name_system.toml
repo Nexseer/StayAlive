@@ -1,0 +1,10 @@
+kind = "DojoContract"
+class_hash = "0x2e5297f896b547811487003e8aadcb73e3ac12bda95d0ece5f13ded03ac0cf0"
+original_class_hash = "0x2e5297f896b547811487003e8aadcb73e3ac12bda95d0ece5f13ded03ac0cf0"
+base_class_hash = "0x0"
+abi = "manifests/dev/abis/base/contracts/stay_alive_systems_name_system_name_system.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "stay_alive::systems::name_system::name_system"

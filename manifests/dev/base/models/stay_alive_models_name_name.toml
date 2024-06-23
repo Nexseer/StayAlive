@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x400133473636ceeb45c1f484f652de31a4aa7b7cb4208b6428a7c3badf16f2a"
+original_class_hash = "0x400133473636ceeb45c1f484f652de31a4aa7b7cb4208b6428a7c3badf16f2a"
+abi = "manifests/dev/abis/base/models/stay_alive_models_name_name.json"
+name = "stay_alive::models::name::name"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "name"
+type = "felt252"
+key = false

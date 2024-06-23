@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x5fa4ee4bd77b1107b4669848f82d6f60761ee64b4ba36ccf243beef505e2480"
+original_class_hash = "0x5fa4ee4bd77b1107b4669848f82d6f60761ee64b4ba36ccf243beef505e2480"
+abi = "manifests/dev/abis/base/models/stay_alive_models_moves_directions_available.json"
+name = "stay_alive::models::moves::directions_available"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "directions"
+type = "Array<Direction>"
+key = false

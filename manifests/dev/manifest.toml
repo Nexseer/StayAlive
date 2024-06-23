@@ -1,0 +1,181 @@
+[world]
+kind = "WorldContract"
+class_hash = "0x3f63cecdc4964acafb921ba2934c6507d1b3c344edb64c2762cf08053169ab9"
+original_class_hash = "0x3f63cecdc4964acafb921ba2934c6507d1b3c344edb64c2762cf08053169ab9"
+abi = "manifests/dev/abis/deployments/dojo_world_world.json"
+address = "0x21e8d195bb55b28402e8e2dfe67ceabb59c492af288c4c0a25a1a8984d10787"
+transaction_hash = "0x77a9d2dc3b1c6c6b6b05233f1aace129d0319a3e0cae66d82c7bb594741314b"
+block_number = 3
+seed = "stay_alive"
+name = "dojo::world::world"
+
+[world.metadata]
+profile_name = "dev"
+rpc_url = "http://localhost:5050/"
+
+[base]
+kind = "Class"
+class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+original_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+name = "dojo::base::base"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x214e7e1ed059e70211a04658e569115ddb3ca6ccc7bd4fcc6fe101a16648c4b"
+class_hash = "0x6a64f020b5c9154f391f389c765d9950f36cd406c8278b6daad75cf0525c06a"
+original_class_hash = "0x6a64f020b5c9154f391f389c765d9950f36cd406c8278b6daad75cf0525c06a"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/stay_alive_systems_actions_actions.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "stay_alive::systems::actions::actions"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x5d0c336e94469d7e443e50ed384637562178342f49b394938e8cd80f254445a"
+class_hash = "0x2e5297f896b547811487003e8aadcb73e3ac12bda95d0ece5f13ded03ac0cf0"
+original_class_hash = "0x2e5297f896b547811487003e8aadcb73e3ac12bda95d0ece5f13ded03ac0cf0"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/stay_alive_systems_name_system_name_system.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "stay_alive::systems::name_system::name_system"
+
+[[contracts]]
+kind = "DojoContract"
+address = "0x7c715e2aa0d4be442b233ad06c35148541b711dd14eb533ce3425697d240cb0"
+class_hash = "0x73248a8ce0c3c584bff6cf4b1f09292994e6b3de315847b9db94d4e4f622e29"
+original_class_hash = "0x73248a8ce0c3c584bff6cf4b1f09292994e6b3de315847b9db94d4e4f622e29"
+base_class_hash = "0x22f3e55b61d86c2ac5239fa3b3b8761f26b9a5c0b5f61ddbd5d756ced498b46"
+abi = "manifests/dev/abis/deployments/contracts/stay_alive_systems_player_system_player_system.json"
+reads = []
+writes = []
+computed = []
+init_calldata = []
+name = "stay_alive::systems::player_system::player_system"
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x5fa4ee4bd77b1107b4669848f82d6f60761ee64b4ba36ccf243beef505e2480"
+original_class_hash = "0x5fa4ee4bd77b1107b4669848f82d6f60761ee64b4ba36ccf243beef505e2480"
+abi = "manifests/dev/abis/deployments/models/stay_alive_models_moves_directions_available.json"
+name = "stay_alive::models::moves::directions_available"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "directions"
+type = "Array<Direction>"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x3a853f1a17da32951bd6a8522653b569f6996403250281429106e85a2df6f72"
+original_class_hash = "0x3a853f1a17da32951bd6a8522653b569f6996403250281429106e85a2df6f72"
+abi = "manifests/dev/abis/deployments/models/stay_alive_models_moves_moves.json"
+name = "stay_alive::models::moves::moves"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "remaining"
+type = "u8"
+key = false
+
+[[models.members]]
+name = "last_direction"
+type = "Direction"
+key = false
+
+[[models.members]]
+name = "can_move"
+type = "bool"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x400133473636ceeb45c1f484f652de31a4aa7b7cb4208b6428a7c3badf16f2a"
+original_class_hash = "0x400133473636ceeb45c1f484f652de31a4aa7b7cb4208b6428a7c3badf16f2a"
+abi = "manifests/dev/abis/deployments/models/stay_alive_models_name_name.json"
+name = "stay_alive::models::name::name"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "name"
+type = "felt252"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x23411adec58ea2722b2012cc7f5018e0334780539f0280bf2bfd9864e18f780"
+original_class_hash = "0x23411adec58ea2722b2012cc7f5018e0334780539f0280bf2bfd9864e18f780"
+abi = "manifests/dev/abis/deployments/models/stay_alive_models_player_player.json"
+name = "stay_alive::models::player::player"
+
+[[models.members]]
+name = "character_id"
+type = "u8"
+key = true
+
+[[models.members]]
+name = "character_type"
+type = "CharacterType"
+key = false
+
+[[models.members]]
+name = "hp"
+type = "u64"
+key = false
+
+[[models.members]]
+name = "attack"
+type = "u64"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x718b1d3750a58c396befe755cee3d62e8f60e84698e18e6c61854659580aff"
+original_class_hash = "0x718b1d3750a58c396befe755cee3d62e8f60e84698e18e6c61854659580aff"
+abi = "manifests/dev/abis/deployments/models/stay_alive_models_position_position.json"
+name = "stay_alive::models::position::position"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "vec"
+type = "Vec2"
+key = false
+
+[[models]]
+kind = "DojoModel"
+class_hash = "0x484cdd520e2d825576591131917a5af9232d5dd45273271167cec9b90e14b36"
+original_class_hash = "0x484cdd520e2d825576591131917a5af9232d5dd45273271167cec9b90e14b36"
+abi = "manifests/dev/abis/deployments/models/stay_alive_systems_actions_actions_moved.json"
+name = "stay_alive::systems::actions::actions::moved"
+
+[[models.members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[models.members]]
+name = "direction"
+type = "Direction"
+key = false
